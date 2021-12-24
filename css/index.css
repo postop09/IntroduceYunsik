@@ -1,0 +1,97 @@
+/* reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jua', sans-serif;
+}
+
+/* util */
+.txt_hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.txt_skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* style */
+.index_header img {
+  position: relative;
+  top: -10px;
+  width: 150px;
+}
+
+.index_header .list_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.index_header .list_nav a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.index_header .list_nav a:hover {
+  color: crimson;
+}
+
+.index_header .list_nav a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  position: relative;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.index_header .list_nav a:hover::after {
+  opacity: 1;
+}
+
+.wrap_intro {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.sec_myself {
+  height: 50vh;
+  background-color: cornflowerblue;
+}
+
+.sec_portfolio {
+  height: 50vh;
+  background-color: darkgoldenrod;
+}
+
+.sec_skills {
+  height: 50vh;
+  background-color: darkseagreen;
+}
+/*# sourceMappingURL=index.css.map */
