@@ -27,58 +27,179 @@
   height: 0;
   overflow: hidden;
 }
+.txt_skip:focus {
+  position: absolute;
+  display: block;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: gray;
+  overflow: hidden;
+  z-index: 10;
+}
 
 /* style */
 #index_header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.index_header {
+  .list_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: 26px;
+    background-color: rgba(240, 240, 240, 0.95);
+    img {
+      width: 150px;
+    }
+    .nav_hover{
+      display: inline-block;
+      width: 120px;
+      line-height: 65px;
+      text-align: center;
+      transition: all .3s;
+    }
+    .nav_hover::after {
+      content: '';
+      display: block;
+      position: relative;
+      bottom: 0px;
+      width: 0;
+      height: 2px;
+      background-color: #c01235;
+      transition: all .3s;
+    }
+    .nav_hover:hover {
+      color: #c01235;
+    }
+    .nav_hover:hover::after {
+      width: 100%;
+    }
+  }
+}
 
+#index_main {
+  background-color: whitesmoke;
 }
-.index_header img {
+.index_main {
   position: relative;
-  top: -10px;
-  width: 150px;
-}
-.index_header .list_nav {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-  font-size: 24px;
-}
-.index_header .list_nav a{
-  display: inline-block;
-  width: 150px;
-  text-align: center;
-  transition: all .3s;
-}
-.index_header .list_nav a:hover {
-  color: crimson;
-}
-.index_header .list_nav a::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: crimson;
-  position: relative;
-  bottom: 0;
-  opacity: 0;
-  transition: all .3s;
-}
-.index_header .list_nav a:hover::after {
-  opacity: 1;
-}
-.wrap_intro {
-  width: 700px;
-  margin: 0 auto;
-}
-.sec_myself {
-  height: 50vh;
-  background-color: cornflowerblue;
-}
-.sec_portfolio {
-  height: 50vh;
-  background-color: darkgoldenrod;
-}
-.sec_skills {
-  height: 50vh;
-  background-color: darkseagreen;
+  .wrap_intro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .artic_boxModel {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 90%;
+    height: 800px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background-color: #dfdfdf;
+    transition: all .5s;
+    cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50px;
+      box-shadow: 0 0 3px 1px darkgray;
+      width: 100%;
+      height: 100%;
+      transition: all .5s;
+    }
+    .img {
+      // border: 1px solid crimson;
+      border-radius: 50px;
+      width: 90%;
+      height: 540px;
+      margin: 0 auto;
+      background-color: darkgray;
+    }
+    .text {
+      // border: 1px solid crimson;
+      border-radius: 50px;
+      width: 90%;
+      height: 150px;
+      margin: 30px auto 0;
+      background-color: darkgray;
+    }
+  }
+  .artic_boxModel:hover {
+    transform: translateY(-10px) scale(103%);
+    &::after {
+      box-shadow: 0 0 10px 3px #c01235;
+    }
+  }
+  .sec_myself {
+    
+  }
+  .sec_portfolio {
+    
+  }
+  .sec_skills {
+    overflow: hidden;
+    .list_skills {
+      width: 3200px;
+      height: 500px;
+      li {
+        float: left;
+        border-radius: 50px;
+        width: 450px;
+        height: 450px;
+        margin: 30px;
+        background-color: #dfdfdf;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          box-shadow: 0 0 3px 1px darkgray;
+          border-radius: 50px;
+        }
+      }
+      .img_skills {
+        display: block;
+        width: 30%;
+        margin: 100px auto 0;
+      }
+    }
+  }
+  .sec_plus {
+
+  }
+  .btn_mode {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 0 3px 1px gray;
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #dfdfdf;
+    transition: all .3s;
+    cursor: pointer;
+    img {
+      width: 50%;
+      padding-top: 5px;
+    }
+    &:hover {
+      background-color: #c01235;
+    }
+  }
 }

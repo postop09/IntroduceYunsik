@@ -29,11 +29,27 @@
   overflow: hidden;
 }
 
+.txt_skip:focus {
+  position: absolute;
+  display: block;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: gray;
+  overflow: hidden;
+  z-index: 10;
+}
+
 /* style */
-.index_header img {
-  position: relative;
-  top: -10px;
-  width: 150px;
+#index_header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 .index_header .list_nav {
@@ -42,56 +58,174 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 30px;
-  font-size: 24px;
+  padding-top: 10px;
+  font-size: 26px;
+  background-color: rgba(240, 240, 240, 0.95);
 }
 
-.index_header .list_nav a {
-  display: inline-block;
+.index_header .list_nav img {
   width: 150px;
+}
+
+.index_header .list_nav .nav_hover {
+  display: inline-block;
+  width: 120px;
+  line-height: 65px;
   text-align: center;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.index_header .list_nav a:hover {
-  color: crimson;
-}
-
-.index_header .list_nav a::after {
+.index_header .list_nav .nav_hover::after {
   content: '';
   display: block;
-  width: 100%;
-  height: 2px;
-  background-color: crimson;
   position: relative;
-  bottom: 0;
-  opacity: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: #c01235;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.index_header .list_nav a:hover::after {
-  opacity: 1;
+.index_header .list_nav .nav_hover:hover {
+  color: #c01235;
 }
 
-.wrap_intro {
-  width: 700px;
+.index_header .list_nav .nav_hover:hover::after {
+  width: 100%;
+}
+
+#index_main {
+  background-color: whitesmoke;
+}
+
+.index_main {
+  position: relative;
+}
+
+.index_main .wrap_intro {
+  max-width: 700px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
-.sec_myself {
-  height: 50vh;
-  background-color: cornflowerblue;
+.index_main .artic_boxModel {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 90%;
+  height: 800px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background-color: #dfdfdf;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
 }
 
-.sec_portfolio {
-  height: 50vh;
-  background-color: darkgoldenrod;
+.index_main .artic_boxModel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px 1px darkgray;
+          box-shadow: 0 0 3px 1px darkgray;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.sec_skills {
-  height: 50vh;
-  background-color: darkseagreen;
+.index_main .artic_boxModel .img {
+  border-radius: 50px;
+  width: 90%;
+  height: 540px;
+  margin: 0 auto;
+  background-color: darkgray;
+}
+
+.index_main .artic_boxModel .text {
+  border-radius: 50px;
+  width: 90%;
+  height: 150px;
+  margin: 30px auto 0;
+  background-color: darkgray;
+}
+
+.index_main .artic_boxModel:hover {
+  -webkit-transform: translateY(-10px) scale(103%);
+          transform: translateY(-10px) scale(103%);
+}
+
+.index_main .artic_boxModel:hover::after {
+  -webkit-box-shadow: 0 0 10px 3px #c01235;
+          box-shadow: 0 0 10px 3px #c01235;
+}
+
+.index_main .sec_skills {
+  overflow: hidden;
+}
+
+.index_main .sec_skills .list_skills {
+  width: 3200px;
+  height: 500px;
+}
+
+.index_main .sec_skills .list_skills li {
+  float: left;
+  border-radius: 50px;
+  width: 450px;
+  height: 450px;
+  margin: 30px;
+  background-color: #dfdfdf;
+  position: relative;
+}
+
+.index_main .sec_skills .list_skills li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 3px 1px darkgray;
+          box-shadow: 0 0 3px 1px darkgray;
+  border-radius: 50px;
+}
+
+.index_main .sec_skills .list_skills .img_skills {
+  display: block;
+  width: 30%;
+  margin: 100px auto 0;
+}
+
+.index_main .btn_mode {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-box-shadow: 0 0 3px 1px gray;
+          box-shadow: 0 0 3px 1px gray;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #dfdfdf;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.index_main .btn_mode img {
+  width: 50%;
+  padding-top: 5px;
+}
+
+.index_main .btn_mode:hover {
+  background-color: #c01235;
 }
 /*# sourceMappingURL=index.css.map */

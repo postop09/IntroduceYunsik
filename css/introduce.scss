@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jua', sans-serif;
+}
+/* util */
+.txt_hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.txt_skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* style */
+#intro_header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.intro_header {
+  nav {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .list_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(240, 240, 240, 0.95);
+    img {
+      width: 150px;
+    }
+    .nav_hover{
+      display: inline-block;
+      width: 120px;
+      line-height: 65px;
+      text-align: center;
+      transition: all .3s;
+    }
+    .nav_hover::after {
+      content: '';
+      display: block;
+      position: relative;
+      bottom: 0px;
+      width: 0;
+      height: 2px;
+      background-color: #c01235;
+      transition: all .3s;
+    }
+    .nav_hover:hover {
+      color: #c01235;
+    }
+    .nav_hover:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+#intro_main {
+  background-color: whitesmoke;
+}
+.intro_main {
+  .wrap_intro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+  }
+}
+.artic_myself {
+  padding: 0 20px 40px;
+  .sec_profile {
+    overflow: hidden;
+    .img_profile {
+      float: left;
+      border-radius: 100%;
+      width: 40px;
+      margin-right: 10px;
+    }
+    .txt_profile {
+      float: left;
+      padding: 3px 0;
+      strong {
+        display: block;
+        font-size: 18px;
+      }
+      small {
+        color: gray;
+      }
+    }
+  }
+  .div_img {
+    position: relative;
+  }
+  .list_img {
+    border: 1px solid crimson;
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+    li {
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/윤식icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .btn_lSlide,
+    .btn_rSlide {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      background-color: #dfdfdf2a;
+      cursor: pointer;
+    }
+    .btn_lSlide {
+      left: 2%;
+    }
+    .btn_rSlide {
+      right: 2%;
+    }
+  .sec_txt {
+    position: relative;
+    .list_btn {
+      overflow: hidden;
+      li {
+        float: left;
+        
+      }
+      li:last-child {
+        float: right;
+      }
+      li:first-child {
+        margin-right: 10px;
+      }
+      button {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    .txt_like {
+      margin: 10px 0;
+    }
+    .txt_title {
+      font-size: 30px;
+    }
+    .txt_explain {
+      max-width: 220px;
+      margin: 10px 0;
+    }
+    .btn_tag {
+      border: 1px solid #c01235;
+      border-radius: 20px;
+      padding: 3px 5px;
+      color: #c01235;
+      // cursor: pointer;
+    }
+    .inp_comment {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #c0123510;
+    }
+    .btn_comment {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 40px;
+      height: 40px;
+      background-color: #c0123505;
+      transition: all .3s;
+      cursor: pointer;
+    }
+    .btn_comment:hover {
+      background-color: #c0123525;
+    }
+  }
+  .sec_comment {
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #c0123505;
+    h4 {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .btn_none {
+      float: right;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+    .list_comment {
+      .txt_comment {
+        margin: 20px 0;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: gray;
+      }
+    }
+  }
+}
+.btn_mode {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 0 3px 1px gray;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #dfdfdf;
+  transition: all .3s;
+  cursor: pointer;
+  img {
+    width: 50%;
+    padding-top: 5px;
+  }
+  &:hover {
+    background-color: #c01235;
+  }
+}

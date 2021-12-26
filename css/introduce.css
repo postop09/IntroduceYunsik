@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Jua', sans-serif;
+}
+
+/* util */
+.txt_hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.txt_skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* style */
+#intro_header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.intro_header nav {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro_header .list_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  font-size: 20px;
+  background-color: rgba(240, 240, 240, 0.95);
+}
+
+.intro_header .list_nav img {
+  width: 150px;
+}
+
+.intro_header .list_nav .nav_hover {
+  display: inline-block;
+  width: 120px;
+  line-height: 65px;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.intro_header .list_nav .nav_hover::after {
+  content: '';
+  display: block;
+  position: relative;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: #c01235;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.intro_header .list_nav .nav_hover:hover {
+  color: #c01235;
+}
+
+.intro_header .list_nav .nav_hover:hover::after {
+  width: 100%;
+}
+
+#intro_main {
+  background-color: whitesmoke;
+}
+
+.intro_main .wrap_intro {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+
+.artic_myself {
+  padding: 0 20px 40px;
+}
+
+.artic_myself .sec_profile {
+  overflow: hidden;
+}
+
+.artic_myself .sec_profile .img_profile {
+  float: left;
+  border-radius: 100%;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.artic_myself .sec_profile .txt_profile {
+  float: left;
+  padding: 3px 0;
+}
+
+.artic_myself .sec_profile .txt_profile strong {
+  display: block;
+  font-size: 18px;
+}
+
+.artic_myself .sec_profile .txt_profile small {
+  color: gray;
+}
+
+.artic_myself .div_img {
+  position: relative;
+}
+
+.artic_myself .list_img {
+  border: 1px solid crimson;
+  border-radius: 10px;
+  width: 100%;
+  height: 500px;
+  margin: 10px 0;
+}
+
+.artic_myself .list_img li {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/윤식icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.artic_myself .btn_lSlide,
+.artic_myself .btn_rSlide {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: #dfdfdf2a;
+  cursor: pointer;
+}
+
+.artic_myself .btn_lSlide {
+  left: 2%;
+}
+
+.artic_myself .btn_rSlide {
+  right: 2%;
+}
+
+.artic_myself .sec_txt {
+  position: relative;
+}
+
+.artic_myself .sec_txt .list_btn {
+  overflow: hidden;
+}
+
+.artic_myself .sec_txt .list_btn li {
+  float: left;
+}
+
+.artic_myself .sec_txt .list_btn li:last-child {
+  float: right;
+}
+
+.artic_myself .sec_txt .list_btn li:first-child {
+  margin-right: 10px;
+}
+
+.artic_myself .sec_txt .list_btn button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.artic_myself .sec_txt .txt_like {
+  margin: 10px 0;
+}
+
+.artic_myself .sec_txt .txt_title {
+  font-size: 30px;
+}
+
+.artic_myself .sec_txt .txt_explain {
+  max-width: 220px;
+  margin: 10px 0;
+}
+
+.artic_myself .sec_txt .btn_tag {
+  border: 1px solid #c01235;
+  border-radius: 20px;
+  padding: 3px 5px;
+  color: #c01235;
+}
+
+.artic_myself .sec_txt .inp_comment {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c0123510;
+}
+
+.artic_myself .sec_txt .btn_comment {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #c0123505;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.artic_myself .sec_txt .btn_comment:hover {
+  background-color: #c0123525;
+}
+
+.artic_myself .sec_comment {
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #c0123505;
+}
+
+.artic_myself .sec_comment h4 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.artic_myself .sec_comment .btn_none {
+  float: right;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.artic_myself .sec_comment .list_comment .txt_comment {
+  margin: 20px 0;
+}
+
+.artic_myself .sec_comment .list_comment p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.btn_mode {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-box-shadow: 0 0 3px 1px gray;
+          box-shadow: 0 0 3px 1px gray;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: #dfdfdf;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.btn_mode img {
+  width: 50%;
+  padding-top: 5px;
+}
+
+.btn_mode:hover {
+  background-color: #c01235;
+}
+/*# sourceMappingURL=introduce.css.map */
