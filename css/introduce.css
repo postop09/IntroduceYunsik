@@ -30,6 +30,21 @@
   overflow: hidden;
 }
 
+.txt_skip:focus {
+  position: absolute;
+  display: block;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: gray;
+  overflow: hidden;
+  z-index: 10;
+}
+
 /* style */
 #intro_header {
   position: -webkit-sticky;
@@ -88,7 +103,7 @@
 }
 
 #intro_main {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .intro_main .wrap_intro {
@@ -214,6 +229,7 @@
   border-radius: 20px;
   padding: 3px 5px;
   color: #c01235;
+  cursor: pointer;
 }
 
 .artic_myself .sec_txt .inp_comment {

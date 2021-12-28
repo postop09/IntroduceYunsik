@@ -95,10 +95,10 @@
     padding: 20px;
     background-color: #f0f0f0;
   }
-  .artic_boxModel {
+  .btn_card {
+    display: block;
     position: relative;
-    top: 0;
-    left: 0;
+    border: 6px solid black;
     border-radius: 50px;
     width: 90%;
     height: 800px;
@@ -107,51 +107,57 @@
     background-color: #dfdfdf;
     transition: all .5s;
     cursor: pointer;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 50px;
-      box-shadow: 0 0 3px 1px darkgray;
-      width: 100%;
-      height: 100%;
-      transition: all .5s;
-    }
-    .img {
-      // border: 1px solid crimson;
-      border-radius: 50px;
+    .img_card {
+      display: block;
+      border: 5px solid black;
+      border-radius: 30px;
       width: 90%;
       height: 540px;
       margin: 0 auto;
-      background-color: darkgray;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
-    .text {
-      // border: 1px solid crimson;
-      border-radius: 50px;
-      width: 90%;
+    .txt_card {
+      display: block;
+      border: 5px solid #c01235;
+      border-radius: 20px;
+      width: 100%;
       height: 150px;
       margin: 30px auto 0;
-      background-color: darkgray;
+      padding: 10px 15px;
+      background-color: rgb(197, 197, 197);
+    }
+    .txt_title {
+      font-size: 24px;
+      font-weight: normal;
+    }
+    .txt_feature {
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
     }
   }
-  .artic_boxModel:hover {
+  .btn_card:hover {
     transform: translateY(-10px) scale(103%);
-    &::after {
-      box-shadow: 0 0 10px 3px #c01235;
+    box-shadow: 0 0 15px 1px #c01235;
+  }  
+  // 새로운 모델
+  .btn_introduce {
+    .img_card {
+      background-image: url(../img/img_me.JPG);
     }
-  }
-  .sec_myself {
-    
   }
   .sec_portfolio {
     
   }
-  .sec_skills {
+  .artic_skills {
     overflow: hidden;
     .list_skills {
-      width: 3200px;
+      width: 3100px;
       height: 500px;
+      user-select: none;
+      cursor: default;
       li {
         float: left;
         border-radius: 50px;

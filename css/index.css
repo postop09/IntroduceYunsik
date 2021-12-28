@@ -111,10 +111,10 @@
   background-color: #f0f0f0;
 }
 
-.index_main .artic_boxModel {
+.index_main .btn_card {
+  display: block;
   position: relative;
-  top: 0;
-  left: 0;
+  border: 6px solid black;
   border-radius: 50px;
   width: 90%;
   height: 800px;
@@ -126,56 +126,66 @@
   cursor: pointer;
 }
 
-.index_main .artic_boxModel::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 3px 1px darkgray;
-          box-shadow: 0 0 3px 1px darkgray;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.index_main .artic_boxModel .img {
-  border-radius: 50px;
+.index_main .btn_card .img_card {
+  display: block;
+  border: 5px solid black;
+  border-radius: 30px;
   width: 90%;
   height: 540px;
   margin: 0 auto;
-  background-color: darkgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.index_main .artic_boxModel .text {
-  border-radius: 50px;
-  width: 90%;
+.index_main .btn_card .txt_card {
+  display: block;
+  border: 5px solid #c01235;
+  border-radius: 20px;
+  width: 100%;
   height: 150px;
   margin: 30px auto 0;
-  background-color: darkgray;
+  padding: 10px 15px;
+  background-color: #c5c5c5;
 }
 
-.index_main .artic_boxModel:hover {
+.index_main .btn_card .txt_title {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.index_main .btn_card .txt_feature {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.index_main .btn_card:hover {
   -webkit-transform: translateY(-10px) scale(103%);
           transform: translateY(-10px) scale(103%);
+  -webkit-box-shadow: 0 0 15px 1px #c01235;
+          box-shadow: 0 0 15px 1px #c01235;
 }
 
-.index_main .artic_boxModel:hover::after {
-  -webkit-box-shadow: 0 0 10px 3px #c01235;
-          box-shadow: 0 0 10px 3px #c01235;
+.index_main .btn_introduce .img_card {
+  background-image: url(../img/img_me.JPG);
 }
 
-.index_main .sec_skills {
+.index_main .artic_skills {
   overflow: hidden;
 }
 
-.index_main .sec_skills .list_skills {
-  width: 3200px;
+.index_main .artic_skills .list_skills {
+  width: 3100px;
   height: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
-.index_main .sec_skills .list_skills li {
+.index_main .artic_skills .list_skills li {
   float: left;
   border-radius: 50px;
   width: 450px;
@@ -185,7 +195,7 @@
   position: relative;
 }
 
-.index_main .sec_skills .list_skills li::after {
+.index_main .artic_skills .list_skills li::after {
   content: '';
   display: block;
   position: absolute;
@@ -198,7 +208,7 @@
   border-radius: 50px;
 }
 
-.index_main .sec_skills .list_skills .img_skills {
+.index_main .artic_skills .list_skills .img_skills {
   display: block;
   width: 30%;
   margin: 100px auto 0;

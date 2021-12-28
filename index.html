@@ -21,7 +21,7 @@
       <ul class="list_nav">
         <li><a href="#" class="nav_hover">소개</a></li>
         <li><a href="#" class="nav_hover">취미</a></li>
-        <li><a href="#" class="nav_img_hover"><img src="img/윤식1.png" alt="메인 홈으로 이동하기"></a></li>
+        <li><a href="./index.html" class="nav_img_hover"><img src="img/윤식1.png" alt="메인 홈으로 이동하기"></a></li>
         <li><a href="#" class="nav_hover">기술</a></li>
         <li><a href="#" class="nav_hover">포트폴리오</a></li>
       </ul>
@@ -30,77 +30,65 @@
   <main id="index_main" class="index_main">
     <h2 class="txt_hide">info</h2>
     <div class="wrap_intro">
+      <!-- tab 키로도 접근하여 모달 || 이동할 수 있도록 -->
+      <!-- 구역을 링크로 하려니 이동이 안되는 문제 -->
       <!-- introduce myself -->
-      <section class="sec_myself">
-        <h3 class="txt_hide">introduce myself</h3>
-        <article class="artic_boxModel">
-          <h4 class="txt_hide">one</h4>
-          <div class="img">
-            <p>img</p>
-          </div>
-          <div class="text">
-            text
-          </div>
-        </article>
-      </section>
+        <button type="button" class="btn_card btn_introduce">
+            <span class="img_card"></span>
+            <span class="txt_card txt_introduce">
+              <strong class="txt_title">이름 : 조윤식</strong>
+              <small class="txt_feature">출생 : 1996년 12월 9일</small>
+              <small class="txt_feature">능력 : 도전하기, 많이 웃기, 경청하고 공감하기, 긍정적으로 생각하기, 계획적으로 살기</small>
+            </span>
+        </button>
       <!-- portfolio -->
-      <section class="sec_portfolio">
-        <h3 class="txt_hide">portfolio</h3>
-        <article class="artic_boxModel">
-          <h4 class="txt_hide">one</h4>
-          <div class="img">
-            <p>img</p>
-          </div>
-          <div class="text">
-            text
-          </div>
-        </article>
-      </section>
+      <button type="button" class="btn_card">
+        <span class="img_card"></span>
+        <span class="txt_card">
+          <strong class="txt_title">이름 : 조윤식</strong>
+          <small class="txt_feature">출생 : 1996년 12월 9일</small>
+          <small class="txt_feature">능력 : 도전하기, 많이 웃기, 경청하고 공감하기, 긍정적으로 생각하기, 계획적으로 살기</small>
+        </span>
+      </button>
       <!-- skills -->
-      <section class="sec_skills">
+      <article class="artic_skills">
         <h3 class="txt_hide">skills</h3>
-        <article class="artic_slideModel">
-          <h4 class="txt_hide">skills</h4>
-          <ul class="list_skills">
-            <li>
-              <img src="img/윤식icon.png" alt="" class="img_skills">
-            </li>
-            <li>
-              2<img src="" alt="" class="img_skills">
-            </li>
-            <li>
-              3<img src="" alt="" class="img_skills">
-            </li>
-            <li>
-              4<img src="" alt="" class="img_skills">
-            </li>
-            <li>
-              5<img src="" alt="" class="img_skills">
-            </li>
-            <li>
-              6<img src="" alt="" class="img_skills">
-            </li>
-          </ul>
-        </article>
-      </section>
+        <ul class="list_skills">
+          <li>
+            <img src="img/윤식icon.png" alt="" class="img_skills">
+          </li>
+          <li>
+            <img src="" alt="HTML" class="img_skills">
+          </li>
+          <li>
+            <img src="" alt="CSS" class="img_skills">
+          </li>
+          <li>
+            <img src="" alt="SCSS" class="img_skills">
+          </li>
+          <li>
+            <img src="" alt="JavaScript" class="img_skills">
+          </li>
+          <li>
+            <img src="" alt="Git" class="img_skills">
+          </li>
+        </ul>
+      </article>
       <!-- plus -->
-      <section class="sec_plus">
-        <h3 class="txt_hide">skills</h3>
-        <article class="artic_boxModel">
-          <h4 class="txt_hide">one</h4>
-          <div class="img">
-            <p>img</p>
-          </div>
-          <div class="text">
-            text
-          </div>
-        </article>
-      </section>
+      <button type="button" class="btn_card">
+        <span class="img_card"></span>
+        <span class="txt_card">
+          <strong class="txt_title">1만 시간의 법칙</strong>
+          <small class="txt_feature">전문가가 되기위해선 1만 시간의 노력이 필요하다.</small>
+          <small class="txt_feature">능력 : 도전하기, 많이 웃기, 경청하고 공감하기, 긍정적으로 생각하기, 계획적으로 살기</small>
+        </span>
+    </button>
     </div>
     <button class="btn_mode"><img src="img/윤식icon.png" alt=""></button>
   </main>
   <footer id="index_footer" class="index_footer">
-
+    <div class="txt_hide">아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/creative-stall-premium" title="Creative Stall Premium">Creative Stall Premium</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>
