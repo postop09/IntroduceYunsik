@@ -163,7 +163,6 @@
       overflow: hidden;
       li {
         float: left;
-        
       }
       li:last-child {
         float: right;
@@ -176,6 +175,10 @@
         height: 30px;
         cursor: pointer;
       }
+      .btn_heart.on {
+        background-color: crimson;
+      }
+      
     }
     .txt_like {
       margin: 10px 0;
@@ -222,9 +225,9 @@
   }
   .sec_comment {
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 10px 0 20px;
     padding: 10px 20px;
-    background-color: #c0123505;
+    background-color: #c0123510;
     h4 {
       display: inline-block;
       font-size: 18px;
@@ -236,7 +239,11 @@
       height: 30px;
       cursor: pointer;
     }
+    .list_comment.on {
+      display: block;
+    }
     .list_comment {
+      display: none;
       .txt_comment {
         margin: 20px 0;
       }

@@ -211,6 +211,10 @@
   cursor: pointer;
 }
 
+.artic_myself .sec_txt .list_btn .btn_heart.on {
+  background-color: crimson;
+}
+
 .artic_myself .sec_txt .txt_like {
   margin: 10px 0;
 }
@@ -263,9 +267,9 @@
 
 .artic_myself .sec_comment {
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 10px 0 20px;
   padding: 10px 20px;
-  background-color: #c0123505;
+  background-color: #c0123510;
 }
 
 .artic_myself .sec_comment h4 {
@@ -279,6 +283,14 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.artic_myself .sec_comment .list_comment.on {
+  display: block;
+}
+
+.artic_myself .sec_comment .list_comment {
+  display: none;
 }
 
 .artic_myself .sec_comment .list_comment .txt_comment {

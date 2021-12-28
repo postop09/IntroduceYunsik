@@ -41,19 +41,23 @@
             <small>2 시간 전</small>
           </p>
         </section>
-        <ul class="list_img">
-          <li></li>
-          <!-- <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li> -->
-        </ul>
+        <div class="div_img">
+          <ul class="list_img">
+            <li></li>
+            <!-- <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li> -->
+          </ul>
+          <button type="button" class="btn_lSlide"><</button>
+          <button type="button" class="btn_rSlide">></button>
+        </div>
         <section class="sec_txt">
           <h4 class="txt_hide">22</h4>
           <ul class="list_btn">
-            <li><button type="button">하트</button></li>
-            <li><button type="button">댓글</button></li>
-            <li><button type="button">공유</button></li>
+            <li><button type="button" class="btn_heart">하트</button></li>
+            <li><button type="button" class="btn_goComment">댓글</button></li>
+            <li><button type="button" class="btn_share">공유</button></li>
           </ul>
-          <p class="txt_like">좋아요 <span>2</span> 명</p>
+          <p class="txt_like">좋아요 <span class="output_like">0</span> 명</p>
           <strong class="txt_title">등산으로 허벅지 혼내주기</strong>
           <p class="txt_explain">누구 만날 때 코트 입고 나간다는 건 진심으로 사랑한다는 의미입니다❤️</p>
           <button type="button" class="btn_tag">#해시태그</button>
@@ -121,5 +125,6 @@
   <footer id="intro_footer" class="intro_footer">
 
   </footer>
+  <script src="./js/introduce.js"></script>
 </body>
 </html>
