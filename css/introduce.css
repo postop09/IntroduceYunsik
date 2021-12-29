@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* reset */
 * {
   -webkit-box-sizing: border-box;
@@ -144,23 +143,33 @@
 
 .artic_myself .div_img {
   position: relative;
+  overflow: hidden;
 }
 
 .artic_myself .list_img {
-  border: 1px solid crimson;
-  border-radius: 10px;
-  width: 100%;
+  width: 1200px;
   height: 500px;
   margin: 10px 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
 }
 
 .artic_myself .list_img li {
-  width: 100%;
+  float: left;
+  width: 600px;
   height: 100%;
-  background-image: url(../img/윤식icon.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.artic_myself .list_img .img_me1 {
+  background-image: url(../img/img_me1.jpg);
+}
+
+.artic_myself .list_img .img_me2 {
+  background-image: url(../img/img_me2.jpg);
 }
 
 .artic_myself .btn_lSlide,
@@ -170,10 +179,10 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border: none;
-  border-radius: 100%;
-  width: 40px;
+  border-radius: 5px;
+  width: 25px;
   height: 40px;
-  background-color: #dfdfdf2a;
+  background-color: #c012351c;
   cursor: pointer;
 }
 
@@ -183,6 +192,33 @@
 
 .artic_myself .btn_rSlide {
   right: 2%;
+}
+
+.artic_myself .btn_lSlide::before,
+.artic_myself .btn_rSlide::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -230px;
+  width: 100px;
+  height: 500px;
+  background-color: #c012350e;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+}
+
+.artic_myself .btn_lSlide::before {
+  left: -12px;
+}
+
+.artic_myself .btn_rSlide::before {
+  right: -12px;
+}
+
+.artic_myself .btn_lSlide:hover::before,
+.artic_myself .btn_rSlide:hover::before {
+  opacity: 1;
 }
 
 .artic_myself .sec_txt {
@@ -224,14 +260,25 @@
 }
 
 .artic_myself .sec_txt .txt_explain {
-  max-width: 220px;
+  max-width: 400px;
   margin: 10px 0;
 }
 
-.artic_myself .sec_txt .btn_tag {
+.artic_myself .sec_txt .list_tag {
+  overflow: hidden;
+}
+
+.artic_myself .sec_txt .list_tag li {
+  float: left;
+  margin-right: 10px;
+}
+
+.artic_myself .sec_txt .list_tag .btn_tag {
   border: 1px solid #c01235;
   border-radius: 20px;
-  padding: 3px 5px;
+  height: 26px;
+  padding: 0px 5px;
+  line-height: 26px;
   color: #c01235;
   cursor: pointer;
 }

@@ -123,40 +123,71 @@
   }
   .div_img {
     position: relative;
+    overflow: hidden;
   }
   .list_img {
-    border: 1px solid crimson;
-    border-radius: 10px;
-    width: 100%;
+    // border: 1px solid crimson;
+    // border-radius: 10px;
+    width: 1200px;
     height: 500px;
     margin: 10px 0;
+    transition: all .2s;
+    overflow: hidden;
     li {
-      width: 100%;
+      float: left;
+      width: 600px;
       height: 100%;
-      background-image: url(../img/윤식icon.png);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
     }
+    .img_me1 {
+      background-image: url(../img/img_me1.jpg);
+    }
+    .img_me2 {
+      background-image: url(../img/img_me2.jpg);
+    }
   }
   .btn_lSlide,
-    .btn_rSlide {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      border: none;
-      border-radius: 100%;
-      width: 40px;
-      height: 40px;
-      background-color: #dfdfdf2a;
-      cursor: pointer;
-    }
-    .btn_lSlide {
-      left: 2%;
-    }
-    .btn_rSlide {
-      right: 2%;
-    }
+  .btn_rSlide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 5px;
+    width: 25px;
+    height: 40px;
+    background-color: #c012351c;
+    cursor: pointer;
+  }
+  .btn_lSlide {
+    left: 2%;
+  }
+  .btn_rSlide {
+    right: 2%;
+  }
+  .btn_lSlide::before,
+  .btn_rSlide::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -230px;
+    width: 100px;
+    height: 500px;
+    background-color: #c012350e;
+    transition: all .3s;
+    opacity: 0;
+  }
+  .btn_lSlide::before {
+    left: -12px;
+  }
+  .btn_rSlide::before {
+    right: -12px;
+  }
+  .btn_lSlide:hover::before,
+  .btn_rSlide:hover::before {
+    opacity: 1;
+  }
   .sec_txt {
     position: relative;
     .list_btn {
@@ -187,15 +218,24 @@
       font-size: 30px;
     }
     .txt_explain {
-      max-width: 220px;
+      max-width: 400px;
       margin: 10px 0;
     }
-    .btn_tag {
-      border: 1px solid #c01235;
-      border-radius: 20px;
-      padding: 3px 5px;
-      color: #c01235;
-      cursor: pointer;
+    .list_tag {
+      overflow: hidden;
+      li {
+        float: left;
+        margin-right: 10px;
+      }
+      .btn_tag {
+        border: 1px solid #c01235;
+        border-radius: 20px;
+        height: 26px;
+        padding: 0px 5px;
+        line-height: 26px;
+        color: #c01235;
+        cursor: pointer;
+      }
     }
     .inp_comment {
       border: none;
