@@ -2,13 +2,14 @@
 
 /* reset */
 * {
+  font-family: 'Jua', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: 'Jua', sans-serif;
+  scroll-behavior: smooth;
 }
 /* util */
 .txt_hide {
@@ -141,8 +142,11 @@
   .btn_card:hover {
     transform: translateY(-10px) scale(103%);
     box-shadow: 0 0 15px 1px #c01235;
-  }  
-  // 새로운 모델
+  }
+  .btn_card:focus {
+    outline: 5px solid #c01235;
+    outline-offset: 5px;
+  }
   .btn_introduce {
     .img_card {
       background-image: url(../img/img_me.JPG);
@@ -182,7 +186,11 @@
       }
     }
   }
-
+  .btn_10000hours {
+    .img_card {
+      background-image: url(../img/img_10000.PNG);
+    }
+  }
   .btn_mode {
     position: fixed;
     bottom: 30px;

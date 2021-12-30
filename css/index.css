@@ -1,5 +1,6 @@
 /* reset */
 * {
+  font-family: 'Jua', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -7,7 +8,7 @@
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: 'Jua', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* util */
@@ -167,6 +168,11 @@
           box-shadow: 0 0 15px 1px #c01235;
 }
 
+.index_main .btn_card:focus {
+  outline: 5px solid #c01235;
+  outline-offset: 5px;
+}
+
 .index_main .btn_introduce .img_card {
   background-image: url(../img/img_me.JPG);
 }
@@ -212,6 +218,10 @@
   display: block;
   width: 30%;
   margin: 100px auto 0;
+}
+
+.index_main .btn_10000hours .img_card {
+  background-image: url(../img/img_10000.PNG);
 }
 
 .index_main .btn_mode {
