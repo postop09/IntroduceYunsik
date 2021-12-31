@@ -2,13 +2,14 @@
 
 /* reset */
 * {
+  font-family: 'Jua', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: 'Jua', sans-serif;
+  scroll-behavior: smooth;
 }
 /* util */
 .txt_hide {
@@ -142,10 +143,10 @@
       background-position: center center;
     }
     .img_me1 {
-      background-image: url(../img/img_me1.jpg);
+      // background-image: url(../img/img_me1.jpg);
     }
     .img_me2 {
-      background-image: url(../img/img_me2.jpg);
+      // background-image: url(../img/img_me2.jpg);
     }
   }
   .btn_lSlide,

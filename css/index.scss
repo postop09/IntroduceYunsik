@@ -49,7 +49,13 @@
   top: 0;
   z-index: 50;
 }
+.index_header.black {
+  background-color: #1d1d1d;
+}
 .index_header {
+  .list_nav.black {
+    background-color: inherit;
+  }
   .list_nav {
     display: flex;
     justify-content: space-around;
@@ -58,6 +64,9 @@
     background-color: rgba(240, 240, 240, 0.95);
     img {
       width: 150px;
+    }
+    .nav_hover.white {
+      color: white;
     }
     .nav_hover{
       display: inline-block;
@@ -85,11 +94,17 @@
   }
 }
 
-#index_main {
+.index_main {
   background-color: whitesmoke;
+}
+.index_main.black {
+  background-color: black;
 }
 .index_main {
   position: relative;
+  .wrap_intro.black {
+    background-color: #1d1d1d;
+  }
   .wrap_intro {
     max-width: 700px;
     margin: 0 auto;
