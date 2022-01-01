@@ -23,7 +23,7 @@
         <li><a href="https://watchwebs.tistory.com/" class="nav_hover">블로그</a></li>
         <li><a href="./index.html" class="nav_img_hover"><img src="img/윤식b.png" alt="메인 홈으로 이동하기"></a></li>
         <li><a href="#" class="nav_hover">기술</a></li>
-        <li><a href="#" class="nav_hover">글쓰기</a></li>
+        <li><a href="#" class="nav_hover">포트폴리오</a></li>
       </ul>
     </nav>
   </header>
@@ -331,7 +331,18 @@
         </section>
       </article>
     </div>
-    <button class="btn_mode"><img src="img/윤식icon.png" alt=""></button>
+    <section id="sec_modal" class="sec_modal">
+      <form action="" method="POST" class="wrap_form">
+        <label for="img_upload" class="txt_hide">업로드할 사진을 선택해주세요.</label>
+        <input type="file" name="" id="img_upload" class="img_upload">
+        <div class="wrap_txt_upload">
+          <label for="txt_upload_title" class="txt_hide">제목을 입력해주세요.</label>
+          <input type="text" name="" id="txt_upload_title" placeholder="#제목" class="txt_upload_title">
+          <label for="txt_upload" class="txt_hide">내용을 입력해주세요.</label>
+          <textarea name="" id="txt_uploag" cols="30" rows="10" placeholder="#내용" class="txt_upload"></textarea>
+        </div>
+      </form>
+    </section>
   </main>
   <footer id="intro_footer" class="intro_footer">
 
