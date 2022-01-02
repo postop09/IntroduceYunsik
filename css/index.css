@@ -197,6 +197,10 @@
   background-image: url(../img/img_me.JPG);
 }
 
+.index_main .btn_blog .img_card {
+  background-image: url(../img/img_blog.PNG);
+}
+
 .index_main .artic_skills {
   overflow: hidden;
 }

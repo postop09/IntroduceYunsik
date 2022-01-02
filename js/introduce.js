@@ -14,7 +14,7 @@ myself.forEach((i) => {
   let moveX = 0;
 
   // 예외처리 : 이미지가 없는 곳으로 넘어가면 안됌.
-  imgMe.style.width = `${imgLenght} * 600px`
+  imgMe.style.width = `${imgLenght * 600}px`
   btnR.addEventListener('click', () => {
     if(moveX > (imgLenght - 1) * (-600)) {
       moveX += -600;

@@ -127,8 +127,6 @@
     overflow: hidden;
   }
   .list_img {
-    // border: 1px solid crimson;
-    // border-radius: 10px;
     width: 1200px;
     height: 500px;
     margin: 10px 0;
@@ -141,12 +139,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-    }
-    .img_me1 {
-      // background-image: url(../img/img_me1.jpg);
-    }
-    .img_me2 {
-      // background-image: url(../img/img_me2.jpg);
     }
   }
   .btn_lSlide,
@@ -210,7 +202,6 @@
       .btn_heart.on {
         background-color: crimson;
       }
-      
     }
     .txt_like {
       margin: 10px 0;
@@ -222,6 +213,7 @@
     .txt_explain {
       max-width: 400px;
       margin: 10px 0;
+      font-size: 19px;
     }
     .list_tag {
       overflow: hidden;
@@ -288,47 +280,55 @@
       display: none;
       .txt_comment {
         margin: 20px 0;
+        font-size: 16px;
       }
       p {
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 15px;
         color: gray;
       }
     }
   }
 }
-.sec_modal {
-  .wrap_form {
-    // position: absolute;
-    // left: 50%;
-    // bottom: 50%;
-    // transform: translate(-50%,-50%);
-    width: 700px;
-    margin: 0 auto;
-    padding: 40px 50px;
-    background-color: steelblue;
+.artic_rotc {
+  .img_me1 {
+    background-image: url(../img/img_me1.jpg);
   }
-  .img_upload {
-    border: 2px solid black;
-    width: 600px;
-    height: 500px;
+  .img_me2 {
+    background-image: url(../img/img_me2.jpg);
   }
-  .wrap_txt_upload {
-    margin-top: 10px;
-    background-color: white;
-    .txt_upload_title {
-      border: none;
-      width: 500px;
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 30px;
-    }
-    .txt_upload {
-      border: none;
-      width: 400px;
-      height: 150px;
-      padding: 10px;
-      overflow: hidden;
-    }
+}
+.artic_scholarship {
+  .img_me1 {
+    background-image: url(../img/img_scholarship.PNG);
+  }
+  .img_me2 {
+    background-image: url(../img/img_scholarship2.PNG);
+  }
+}
+.artic_challenge {
+  .img_me1 {
+    background-image: url(../img/img_challenge.PNG);
+  }
+  .img_me2 {
+    background-image: url(../img/img_challenge2.JPG);
+  }
+}
+// 다음 이미지가 보이지 않는 문제
+// 자바스크립트에서 `${imgLenght} * 600px`로 되어 있었다.
+.artic_habit1 {
+  .img_me1 {
+    background-image: url(../img/img_habit1.JPG);
+  }
+  .img_me2 {
+    background-image: url(../img/img_habit1_2.jpg);
+  }
+}
+.artic_habit2 {
+  .img_me1 {
+    background-image: url(../img/img_habit2.jpg);
+  }
+  .img_me2 {
+    background-image: url(../img/img_habit2_2.JPG);
   }
 }

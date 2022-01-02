@@ -256,6 +256,7 @@
 .artic_myself .sec_txt .txt_explain {
   max-width: 400px;
   margin: 10px 0;
+  font-size: 19px;
 }
 
 .artic_myself .sec_txt .list_tag {
@@ -336,45 +337,52 @@
 
 .artic_myself .sec_comment .list_comment .txt_comment {
   margin: 20px 0;
+  font-size: 16px;
 }
 
 .artic_myself .sec_comment .list_comment p {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 15px;
   color: gray;
 }
 
-.sec_modal .wrap_form {
-  width: 700px;
-  margin: 0 auto;
-  padding: 40px 50px;
-  background-color: steelblue;
+.artic_rotc .img_me1 {
+  background-image: url(../img/img_me1.jpg);
 }
 
-.sec_modal .img_upload {
-  border: 2px solid black;
-  width: 600px;
-  height: 500px;
+.artic_rotc .img_me2 {
+  background-image: url(../img/img_me2.jpg);
 }
 
-.sec_modal .wrap_txt_upload {
-  margin-top: 10px;
-  background-color: white;
+.artic_scholarship .img_me1 {
+  background-image: url(../img/img_scholarship.PNG);
 }
 
-.sec_modal .wrap_txt_upload .txt_upload_title {
-  border: none;
-  width: 500px;
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 30px;
+.artic_scholarship .img_me2 {
+  background-image: url(../img/img_scholarship2.PNG);
 }
 
-.sec_modal .wrap_txt_upload .txt_upload {
-  border: none;
-  width: 400px;
-  height: 150px;
-  padding: 10px;
-  overflow: hidden;
+.artic_challenge .img_me1 {
+  background-image: url(../img/img_challenge.PNG);
+}
+
+.artic_challenge .img_me2 {
+  background-image: url(../img/img_challenge2.JPG);
+}
+
+.artic_habit1 .img_me1 {
+  background-image: url(../img/img_habit1.JPG);
+}
+
+.artic_habit1 .img_me2 {
+  background-image: url(../img/img_habit1_3.jpg);
+}
+
+.artic_habit2 .img_me1 {
+  background-image: url(../img/img_habit2_2.jpg);
+}
+
+.artic_habit2 .img_me2 {
+  background-image: url(../img/img_habit2.JPG);
 }
 /*# sourceMappingURL=introduce.css.map */
