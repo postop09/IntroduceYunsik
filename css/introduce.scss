@@ -124,6 +124,7 @@
   }
   .div_img {
     position: relative;
+    max-width: 600px;
     overflow: hidden;
   }
   .list_img {
@@ -321,14 +322,145 @@
     background-image: url(../img/img_habit1.JPG);
   }
   .img_me2 {
-    background-image: url(../img/img_habit1_2.jpg);
+    background-image: url(../img/img_habit2.JPG);
   }
 }
 .artic_habit2 {
   .img_me1 {
-    background-image: url(../img/img_habit2.jpg);
+    background-image: url(../img/img_habit3.JPG);
   }
   .img_me2 {
-    background-image: url(../img/img_habit2_2.JPG);
+    background-image: url(../img/img_habit4.JPG);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro_header {
+    nav {
+      max-width: 100%;
+    }
+  }
+  .intro_main {
+    .wrap_intro {
+      max-width: 100%;
+      .div_img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .intro_header {
+    nav {
+      max-width: 340px;
+    }
+    .list_nav {
+      font-size: 14px;
+      img {
+        width: 60px;
+      }
+      .nav_hover{
+        width: 60px;
+        line-height: 30px;
+      }
+    }
+  }
+  .intro_main {
+    .wrap_intro {
+      max-width: 340px;
+      padding: 10px;
+      .artic_myself {
+        padding: 0 0 20px;
+        .sec_profile {
+          .txt_profile {
+            strong {
+              font-size: 14px;
+            }
+            small {
+              font-size: 12px;
+            }
+          }
+        }
+        .list_img {
+          height: 200px;
+          li {
+            width: 320px;
+            margin-right: 280px;
+            height: 100%;
+          }
+        }
+        .btn_lSlide::before,
+        .btn_rSlide::before {
+          top: -80px;
+          width: 50px;
+          height: 200px;
+        }
+        .sec_txt {
+          .list_btn {
+            li:first-child {
+              margin-right: 5px;
+            }
+            button {
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+            .btn_heart.on {
+              background-color: crimson;
+            }
+          }
+          .txt_like {
+            font-size: 12px;
+          }
+          .txt_title {
+            max-width: 200px;
+            font-size: 16px;
+          }
+          .txt_explain {
+            max-width: 300px;
+            font-size: 14px;
+          }
+          .list_tag {
+            li {
+              float: left;
+              margin-right: 10px;
+            }
+            .btn_tag {
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+            }
+          }
+          .inp_comment {
+            padding: 5px 10px;
+            font-size: 14px;
+          }
+          .btn_comment {
+            width: 30px;
+            height: 28px;
+            font-size: 12px;
+          }
+        }
+        .sec_comment {
+          padding: 5px 10px;
+          h4 {
+            font-size: 14px;
+          }
+          .btn_none {
+            width: 25px;
+            height: 20px;
+          }
+          .list_comment {
+            .txt_comment {
+              margin: 20px 0 5px;
+              font-size: 14px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 }

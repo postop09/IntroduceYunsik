@@ -144,6 +144,7 @@
 
 .artic_myself .div_img {
   position: relative;
+  max-width: 600px;
   overflow: hidden;
 }
 
@@ -375,14 +376,126 @@
 }
 
 .artic_habit1 .img_me2 {
-  background-image: url(../img/img_habit1_3.jpg);
+  background-image: url(../img/img_habit2.JPG);
 }
 
 .artic_habit2 .img_me1 {
-  background-image: url(../img/img_habit2_2.jpg);
+  background-image: url(../img/img_habit3.JPG);
 }
 
 .artic_habit2 .img_me2 {
-  background-image: url(../img/img_habit2.JPG);
+  background-image: url(../img/img_habit4.JPG);
+}
+
+@media screen and (max-width: 768px) {
+  .intro_header nav {
+    max-width: 100%;
+  }
+  .intro_main .wrap_intro {
+    max-width: 100%;
+  }
+  .intro_main .wrap_intro .div_img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .intro_header nav {
+    max-width: 340px;
+  }
+  .intro_header .list_nav {
+    font-size: 14px;
+  }
+  .intro_header .list_nav img {
+    width: 60px;
+  }
+  .intro_header .list_nav .nav_hover {
+    width: 60px;
+    line-height: 30px;
+  }
+  .intro_main .wrap_intro {
+    max-width: 340px;
+    padding: 10px;
+  }
+  .intro_main .wrap_intro .artic_myself {
+    padding: 0 0 20px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_profile .txt_profile strong {
+    font-size: 14px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_profile .txt_profile small {
+    font-size: 12px;
+  }
+  .intro_main .wrap_intro .artic_myself .list_img {
+    height: 200px;
+  }
+  .intro_main .wrap_intro .artic_myself .list_img li {
+    width: 320px;
+    margin-right: 280px;
+    height: 100%;
+  }
+  .intro_main .wrap_intro .artic_myself .btn_lSlide::before,
+  .intro_main .wrap_intro .artic_myself .btn_rSlide::before {
+    top: -80px;
+    width: 50px;
+    height: 200px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .list_btn li:first-child {
+    margin-right: 5px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .list_btn button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .list_btn .btn_heart.on {
+    background-color: crimson;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .txt_like {
+    font-size: 12px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .txt_title {
+    max-width: 200px;
+    font-size: 16px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .txt_explain {
+    max-width: 300px;
+    font-size: 14px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .list_tag li {
+    float: left;
+    margin-right: 10px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .list_tag .btn_tag {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .inp_comment {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_txt .btn_comment {
+    width: 30px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_comment {
+    padding: 5px 10px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_comment h4 {
+    font-size: 14px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_comment .btn_none {
+    width: 25px;
+    height: 20px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_comment .list_comment .txt_comment {
+    margin: 20px 0 5px;
+    font-size: 14px;
+  }
+  .intro_main .wrap_intro .artic_myself .sec_comment .list_comment p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=introduce.css.map */
