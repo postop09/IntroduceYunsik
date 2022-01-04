@@ -13,7 +13,6 @@ myself.forEach((i) => {
   const imgLenght = imgMe.children.length;
   let moveX = 0;
 
-  // 예외처리 : 이미지가 없는 곳으로 넘어가면 안됌.
   imgMe.style.width = `${imgLenght * 600}px`
   btnR.addEventListener('click', () => {
     if(moveX > (imgLenght - 1) * (-600)) {
@@ -67,13 +66,10 @@ myself.forEach((i) => {
       comment.style.display = 'none';
     }
   })
-  // 어려운 부분 : 새로운 영역이 추가되지 않고 글이 수정되는 문제
-  // 요소를 생성해서 붙여 넣어야 한다?
   btnComment.addEventListener('click', () => {
     const liTag = document.createElement('li');
     liTag.setAttribute('class', 'txt_comment');
   
-    // 예외처리 : 아무것도 입력이 안되면 댓글 작성x
     if(inpComment.value == '') {
       alert('내용을 작성해주세요.');
       liTag.innerHTML = '';

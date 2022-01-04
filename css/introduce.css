@@ -21,15 +21,6 @@
   overflow: hidden;
 }
 
-.txt_skip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
 .txt_skip:focus {
   position: absolute;
   display: block;

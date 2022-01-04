@@ -272,4 +272,54 @@
 .index_main .btn_mode:hover {
   background-color: #c01235;
 }
+
+@media screen and (max-width: 700px) {
+  .index_header .list_nav {
+    font-size: 16px;
+  }
+  .index_header .list_nav img {
+    width: 60px;
+  }
+  .index_header .list_nav .nav_hover {
+    width: 65px;
+    line-height: 30px;
+  }
+  .index_main .wrap_intro {
+    max-width: 340px;
+    padding: 10px;
+  }
+  .index_main .btn_card {
+    border: 3px solid black;
+    border-radius: 30px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 40px auto;
+    padding: 25px 15px;
+    cursor: pointer;
+  }
+  .index_main .btn_card .img_card {
+    border: 3px solid black;
+    height: 250px;
+  }
+  .index_main .btn_card .txt_card {
+    border: 3px solid #c01235;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 15px auto 0;
+    padding: 5px 10px;
+  }
+  .index_main .btn_card .txt_title {
+    font-size: 17px;
+  }
+  .index_main .btn_card .txt_feature {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .index_main .btn_mode {
+    width: 35px;
+    height: 35px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

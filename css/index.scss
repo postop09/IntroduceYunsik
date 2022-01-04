@@ -121,7 +121,6 @@
     margin: 40px auto;
     padding: 40px 30px;
     background-color: #dfdfdf;
-    // background-color: dimgray;
     transition: all .5s;
     cursor: pointer;
     .img_card {
@@ -178,7 +177,7 @@
     .list_skills {
       width: 3100px;
       height: 500px;
-      user-select: none; // 콘텐츠가 선택되지 않도록 하는 속성
+      user-select: none;
       cursor: default;
       li {
         float: left;
@@ -230,6 +229,55 @@
     }
     &:hover {
       background-color: #c01235;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .index_header {
+    .list_nav {
+      font-size: 16px;
+      img {
+        width: 60px;
+      }
+      .nav_hover{
+        width: 65px;
+        line-height: 30px;
+      }
+    }
+  }
+  .index_main {
+    .wrap_intro {
+      max-width: 340px;
+      padding: 10px;
+    }
+    .btn_card {
+      border: 3px solid black;
+      border-radius: 30px;
+      height: fit-content;
+      margin: 40px auto;
+      padding: 25px 15px;
+      cursor: pointer;
+      .img_card {
+        border: 3px solid black;
+        height: 250px;
+      }
+      .txt_card {
+        border: 3px solid #c01235;
+        height: fit-content;
+        margin: 15px auto 0;
+        padding: 5px 10px;
+      }
+      .txt_title {
+        font-size: 17px;
+      }
+      .txt_feature {
+        margin-top: 0;
+        font-size: 14px;
+      }
+    }
+    .btn_mode {
+      width: 35px;
+      height: 35px;
     }
   }
 }
