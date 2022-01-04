@@ -18,7 +18,8 @@
 - JavaScript
 - Git
 - 로고 제작: 김대원
-- MindMap
+- [기획: MindMap](https://www.mindmeister.com/folders)
+- [이미지 압축: Optimizilla](https://imagecompressor.com/ko/)
 
 ## 🔴제작 과정
 - [Mindmap](https://www.mindmeister.com/)을 이용해서 기획
