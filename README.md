@@ -9,7 +9,7 @@
 - 개인 제작한 페이지 보기
 
 ## 🔴빌드 및 실행방법
-작동 페이지:
+작동 페이지: https://postop09.github.io/IntroduceYunsik/index.html
 
 ## 🔴개발 환경
 - 개인 제작
